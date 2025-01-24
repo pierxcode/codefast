@@ -65,7 +65,7 @@ export default function FAQ() {
                   transition: "max-height 0.5s ease-in-out, opacity 0.3s ease-in-out",
                 }}
               >
-                <p className="mt-3 text-gray-700">{faq.answer}</p>
+                <p className="mt-3 0">{faq.answer}</p>
               </div>
             </li>
           );
