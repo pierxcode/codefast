@@ -61,7 +61,7 @@ export default function Home() {
           en bouw betere producten
         </h1>
         <p className="opacity-90 mb-10">
-          Maak een feedback bord in minuten, prioriteer features, en bouw producten waar klanten van houden.
+          Maak een feedback bord in minuten, prioritiseer features, en bouw producten waar klanten van houden.
         </p>
         <ButtonLogin2 isLoggedIn={isLoggedIn} name={name} />
       </div>
