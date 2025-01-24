@@ -1,5 +1,7 @@
 import ButtonLogin2 from "@/components/ButtonLogin2";
 import FAQ from "@/components/FAQ";
+import Image from "next/image";
+import productDemo from "./productDemo.jpeg"
 
 export default function Home() {
   const isLoggedIn = true;
@@ -13,7 +15,7 @@ export default function Home() {
 
   return (
     <main>
-      {/* NAV */}
+      {/* HEADER */}
       <section className="bg-base-200">
         <div className="flex justify-between items-center px-8 py-4 max-w-3xl mx-auto">
              <div>
@@ -44,8 +46,16 @@ export default function Home() {
             />
         </div>
       </section>
-      {/* HEADER */}
-      <section className="text-center py-32 px-8 max-w-3xl mx-auto">
+
+      {/* HERO */}
+      <section className="text-center lg:text-left py-32 px-8 max-w-5xl mx-auto flex flex-col lg:flex-row gap-14 items-center">
+       <Image 
+       src={productDemo} 
+       alt="Product Demo" 
+       className="w-96 rounded-3xl"
+       />
+       
+       <div>
         <h1 className="text-4xl font-extrabold mb-6">
           Verzamel feedback van klanten
           en bouw betere producten
@@ -54,6 +64,7 @@ export default function Home() {
           Maak een feedback bord in minuten, prioriteer features, en bouw producten waar klanten van houden.
         </p>
         <ButtonLogin2 isLoggedIn={isLoggedIn} name={name} />
+      </div>
       </section>
 
       {/* PRICING */}
