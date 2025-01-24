@@ -1,11 +1,10 @@
 "use client"; // This marks the component as a Client Component
-
 import React, { useState, useRef } from "react";
 
 const faqs = [
   {
-    question: "Waarom heb ik Klant.io nodig?",
-    answer: "Klant.io helpt je feedback te verzamelen en producten te bouwen waar klanten van houden.",
+    question: "Waarom heb ik Klanten.io nodig?",
+    answer: "Klanten.io helpt je feedback te verzamelen en producten te bouwen waar klanten van houden.",
   },
   {
     question: "Werkt het voor eenmalige aankopen?",
@@ -33,7 +32,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-white py-32 px-8 max-w-3xl mx-auto">
+    <section className="dark py-32 px-8 max-w-3xl mx-auto">
       <p className="text-sm uppercase font-medium text-center text-primary mb-4">
         FAQ
       </p>
@@ -44,14 +43,14 @@ export default function FAQ() {
         {faqs.map((faq, index) => {
           const isOpen = openIndexes.includes(index);
           return (
-            <li key={index} className="border-b border-gray-100 pb-5 pt-1">
+            <li key={index} className="border-b border-gray-700 pb-5 pt-1">
               <button
                 className="flex justify-between items-center w-full text-left"
                 onClick={() => toggleFAQ(index)}
               >
                 <span
                   className={`font-medium ${
-                    isOpen ? "text-primary font-bold" : "text-black"
+                    isOpen ? "text-primary font-bold" : "text"
                   }`}
                 >
                   {faq.question}
