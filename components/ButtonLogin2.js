@@ -1,9 +1,11 @@
-const ButtonLogin2 = ({ isLoggedIn, name }) => {
+import Link from "next/link";
+
+const ButtonLogin2 = ({ isLoggedIn, name, extraStyle }) => {
   if (isLoggedIn) {
     return (
-      <a href="/dashboard" className="px-4 py-3 text-white rounded-lg bg-primary">
-        Welcome back, {name}
-      </a>
+      <Link href="/dashboard" className={`btn btn-primary text-white rounded-3xl ${extraStyle ? extraStyle : ""}`}>
+        Welkom terug, {name}
+      </Link>
     );
   }
 
