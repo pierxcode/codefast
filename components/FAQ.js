@@ -1,5 +1,5 @@
 "use client"; // This marks the component as a Client Component
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 const faqs = [
   {
